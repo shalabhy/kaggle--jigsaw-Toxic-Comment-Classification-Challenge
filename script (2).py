@@ -45,7 +45,7 @@ def main():
     max_words = max(max_words_train,max_words_test)
     raw = pd.concat([train["comment_text"],test["comment_text"]])
     vocab = 100000
-    # Any results you write to the current directory are saved as output.
+    
     from keras.models import Sequential
     from keras.layers import Dense, Flatten
     from keras.layers.embeddings import Embedding
